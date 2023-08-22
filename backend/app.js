@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
   }));
   mongoose.set('strictQuery',true);
   // mongoose.connect("mongodb://127.0.0.1:27017/blogDB",{useNewUrlParser:true})
-  process.env.DATABASE
+  process.env.DATABASE 
   const notesSchema={
     title:String,
     content:String
