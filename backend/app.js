@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({
     extended: true
   }));
   mongoose.set('strictQuery',true);
-  mongoose.connect("mongodb://127.0.0.1:27017/blogDB",{useNewUrlParser:true})
-  // // mongoose.connect("mongodb+srv://hardebite:Adexturbo@cluster0.msmirmh.mongodb.net/todolistDB")
+  // mongoose.connect("mongodb://127.0.0.1:27017/blogDB",{useNewUrlParser:true})
+  process.env.DATABASE
   const notesSchema={
     title:String,
     content:String
